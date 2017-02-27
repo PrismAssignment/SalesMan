@@ -17,6 +17,8 @@ cc.csv
 RUN
 - file with program output
 
+Assignment questions:
+
 * how to run your script or function
 - Clone github repository
 - run SalesMan.py from the shell 
