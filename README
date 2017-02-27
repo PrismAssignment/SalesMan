@@ -1,0 +1,33 @@
+Assignment "SalesMan"
+project folder:
+Prism_Assignement
+
+Brief description of submitted files: 
+
+SalesMan.py
+- Printing output distances between world capital cities
+- includes method find() which parse CVS file and return list of with city name and it's Latitude and Longitude
+- includes method conversion() which converts from Lat/Lon coordinates to 2D flat Euclidean coordinates
+- includes method distance which by using Pythagorean theorem calculates distance between two given coordinates (x, y)
+- includes main() method which provides programm logic and gives option to output data in miles or kilometers
+
+cc.csv
+- file with list of world capital cities with latitude and longitude coordinates
+
+RUN
+- file with program output
+
+* how to run your script or function
+- Clone github repository
+- run SalesMan.py from the shell 
+
+* what the primary design decisions were in implementing your solution and why you made the choices you did
+It looks like (especially by bonus part) that the most functional approach is the one which utilizing googlemaps API. However assuming possible complexity of googlemaps, Mercator projection apporach was selected. Idea is to convert Lat Lon coordinates into Mercator projection and then use Pythagorean theorem to calculate distance between two coordinates. It should give good accuracy near equator and reasonable near poles. Longitude and Latitude is listed in a CSV file for capital city across the world and used foe mercator.
+
+Note: current Mercator projection formula has a bug and not accurate.
+
+* if you ran out of time, what you were hoping to do next
+ - Use googlemaps API for more accurate distance and possibility to use different ways of travel between cities
+ - Solve vacation man problem in order to find shortest way from point A to point B. It looks like a part of a big task of salesman problem
+ - add try catch exseptions
+ - add functionality to find distance between user defind number of cities (currently three)
