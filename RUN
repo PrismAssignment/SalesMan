@@ -1,0 +1,12 @@
+C:\Python34\python.exe C:/Users/Intrepid/PycharmProjects/Prism_assignement/SalesMan.py
+Enter first city
+Moscow
+Enter second city
+Paris
+Enter third city
+London
+Would you like output in miles Input (1) or kilometers Input (2)2
+This is distance between Moscow and Paris in kilometers: 3088.84
+This is distance between Paris and London in kilometers: 397.99
+
+Process finished with exit code 0
